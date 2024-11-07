@@ -58,7 +58,8 @@ def analyze_climate_sentiment(text):
     return result
 # Streamlit app
 def main():
-    st.title("Sustainability Report Summarizer")
+    st.markdown("<h1 style='text-align: center;'>Golden.AI</h1>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center;color: gray;'>The Ultimate Climate Screen</h3>", unsafe_allow_html=True)
 
     # File upload
     uploaded_files = st.file_uploader("Upload PDF files", type="pdf", accept_multiple_files=True)
