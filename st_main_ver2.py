@@ -83,10 +83,11 @@ def main():
                 score = [name["score"] for name in sentiment_result]
                 score = score[0]
                 sentiment = [name["label"] for name in sentiment_result]
+                sentiment = sentiment[0]
                 star_rating = score * 10
                 st.write(f"### Consolidated Summary for {uploaded_file.name}")
                 st.write(final_summary)
-                st.write(f"Sentiment: {sentiment[0]}")
+                st.write(f"Sentiment: {f"Sentiment: {sentiment[0].capitalize()}")
                 st.write(f"Rating: {score:.2f}")
                 st.write("⭐" * int(star_rating) + "☆" * (10 - int(star_rating)))
 
