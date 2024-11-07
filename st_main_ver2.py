@@ -46,7 +46,7 @@ def summarize_text(text):
     response = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[
-            {"role": "system", "content": "Summarize the client's sustainability ambitions."},
+            {"role": "system", "content": "Summarize with a focus on key metrics, commitments, and direct quotes related to sustainability initiatives. "},
             {"role": "user", "content": text}
         ],
         max_tokens=150
