@@ -87,7 +87,7 @@ def main():
                 st.write(f"### Consolidated Summary for {uploaded_file.name}")
                 st.write(final_summary)
                 st.write(f"Sentiment: {sentiment[0]}")
-                st.write(f"Rating: {score:2f}")
+                st.write(f"Rating: {score:.2f}")
                 st.write("⭐" * int(star_rating) + "☆" * (10 - int(star_rating)))
 
 if __name__ == "__main__":
