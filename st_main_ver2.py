@@ -58,7 +58,7 @@ def analyze_climate_sentiment(text):
     return result
 # Streamlit app
 def main():
-    st.markdown("<h1 style='text-align: center;'>Golden.AI</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>golden.ai</h1>", unsafe_allow_html=True)
     st.markdown("<h3 style='text-align: center;color: gray;'>The Ultimate Climate Screen</h3>", unsafe_allow_html=True)
 
     # File upload
